@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08070b">
+  <meta name="description" content="钟乳石梦琴。一座会发声的洞穴。Meaningless.">
+  <title>钟乳石梦琴</title>
+  <link rel="preload" href="cave.webp" as="image">
+  <link rel="stylesheet" href="style.css">
+  <script src="cave.js" defer></script>
+</head>
+<body id="top">
+  <section class="hero" id="cave" aria-labelledby="title">
+    <div class="scene" aria-hidden="true"></div>
+    <div class="scene-light" aria-hidden="true"></div>
+    <header class="site-header frame">
+      <a href="#top" class="brand" aria-label="返回洞口">
+        <span class="sigil" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>67<span class="brand-period">.</span></span>
+      </a>
+      <nav aria-label="页面导航">
+        <a class="nav-link" href="#strings">拨弦</a>
+        <button id="sound" class="sound" type="button" aria-pressed="true" aria-label="声音">
+          <span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span id="sound-label">声音开启</span>
+        </button>
+      </nav>
+    </header>
+    <div class="intro frame">
+      <div class="intro-copy">
+        <p class="wordmark" lang="en">MEANINGLESS<span>.</span></p>
+        <h1 id="title">钟乳石<span>梦琴</span></h1>
+        <p class="description">石头在梦里，长出了弦。</p>
+        <button id="listen" class="listen" type="button">
+          <span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          听一声
+        </button>
+        <span id="audio-status" class="sr-only" role="status"></span>
+      </div>
+    </div>
+    <div class="hero-foot frame">
+      <span class="fine-line" aria-hidden="true"></span>
+      <a href="#strings" class="dive">下潜拨弦<span aria-hidden="true"></span></a>
+      <span class="fine-line" aria-hidden="true"></span>
+    </div>
+  </section>
+
+  <main class="instrument frame" id="strings" aria-labelledby="strings-title">
+    <div class="instrument-heading">
+      <h2 id="strings-title">拨弦</h2>
+      <p class="instructions"><span class="desktop-hint">点按琴弦，或使用键盘 <span lang="en">A S D F G H J</span>。</span><span class="touch-hint">点按琴弦，听洞穴回响。</span></p>
+    </div>
+    <div class="resonator" aria-label="七根琴弦">
+      <button class="string" type="button" data-note="0" aria-label="D3 琴弦，快捷键 A" aria-keyshortcuts="A"><span class="thread" aria-hidden="true"></span><kbd aria-hidden="true">A</kbd></button>
+      <button class="string" type="button" data-note="1" aria-label="F3 琴弦，快捷键 S" aria-keyshortcuts="S"><span class="thread" aria-hidden="true"></span><kbd aria-hidden="true">S</kbd></button>
+      <button class="string" type="button" data-note="2" aria-label="G3 琴弦，快捷键 D" aria-keyshortcuts="D"><span class="thread" aria-hidden="true"></span><kbd aria-hidden="true">D</kbd></button>
+      <button class="string" type="button" data-note="3" aria-label="A3 琴弦，快捷键 F" aria-keyshortcuts="F"><span class="thread" aria-hidden="true"></span><kbd aria-hidden="true">F</kbd></button>
+      <button class="string" type="button" data-note="4" aria-label="C4 琴弦，快捷键 G" aria-keyshortcuts="G"><span class="thread" aria-hidden="true"></span><kbd aria-hidden="true">G</kbd></button>
+      <button class="string" type="button" data-note="5" aria-label="D4 琴弦，快捷键 H" aria-keyshortcuts="H"><span class="thread" aria-hidden="true"></span><kbd aria-hidden="true">H</kbd></button>
+      <button class="string" type="button" data-note="6" aria-label="F4 琴弦，快捷键 J" aria-keyshortcuts="J"><span class="thread" aria-hidden="true"></span><kbd aria-hidden="true">J</kbd></button>
+    </div>
+  </main>
+  <footer class="site-footer frame">
+    <span class="footer-title">钟乳石梦琴</span>
+    <a href="#top">回到洞口</a>
+  </footer>
+</body>
+</html>
